@@ -2,3 +2,6 @@ Running: xsim.dir/v_axis_gen_tb_behav/xsimk.exe -simmode gui -wdb v_axis_gen_tb_
 Design successfully loaded
 Design Loading Memory Usage: 7276 KB (Peak: 7276 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 12960 KB (Peak: 12960 KB)
+Simulation CPU Usage: 1718 ms
