@@ -6,8 +6,12 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 entity v_axis_gen is
-    port (  clk100 : in  std_logic;
-            resetn : in std_logic    
+    port (  CLK_I : in  std_logic;
+            VGA_R   : out std_logic_vector(3 downto 0);
+            VGA_G   : out std_logic_vector(3 downto 0);
+            VGA_B   : out std_logic_vector(3 downto 0);
+            VGA_HS_O  : out std_logic;
+            VGA_VS_O  : out std_logic
     );
 end v_axis_gen;
 
@@ -96,6 +100,35 @@ component v_axi4s_vid_out_0 is
     );
     end component clk_wiz_0;
 
+
+    component axisviout2vga is
+    port (  
+        
+        vid_clock       : in STD_LOGIC;
+        vid_active_video : in STD_LOGIC;
+        vid_vsync       : in STD_LOGIC;
+        vid_hsync       : in STD_LOGIC;
+        vid_data        : in STD_LOGIC_VECTOR ( 23 downto 0 );
+
+        vga_red         : out STD_LOGIC_VECTOR(3 downto 0);
+        vga_green       : out STD_LOGIC_VECTOR(3 downto 0);
+        vga_blue        : out STD_LOGIC_VECTOR(3 downto 0);
+        vga_hsync       : out STD_LOGIC;
+        vga_vsync       : out STD_LOGIC
+
+    );
+    end component axisviout2vga;
+
+    component resetgen is
+    port (  
+        clock_in    : in std_logic;
+        clock_out   : out std_logic;
+        resetn_out  : out std_logic
+
+    );
+    end component resetgen;
+
+
 -------------
 -- Signals --
 -------------
@@ -116,7 +149,14 @@ component v_axi4s_vid_out_0 is
 
     signal clock_video  : std_logic;
 
+    signal vid_active_video : std_logic;
+    signal vid_vsync    : std_logic;
+    signal vid_hsync    : std_logic;
+    signal vid_data     : std_logic_vector(23 downto 0);
+
     signal enable       : std_logic;
+    signal clk25M       : std_logic;
+    signal resetn       : std_logic;
 
 begin
 
@@ -125,8 +165,8 @@ begin
 
     test_pattern_gen_i1 : test_pattern_gen
     generic map (
-        ROWS    => 525,
-        COLUMNS => 800
+        ROWS    => 480,
+        COLUMNS => 640
     )
     port map ( 
         clock_i     => clock_video,
@@ -167,13 +207,13 @@ v_axi4s_vid_out_0_i1 : v_axi4s_vid_out_0
         s_axis_video_tlast  => axis_video_tlast,
         fid     => '0',
         vid_io_out_ce => '1',
-        vid_active_video => open,
-        vid_vsync => open,
-        vid_hsync => open,
+        vid_active_video => vid_active_video,
+        vid_vsync => vid_vsync,
+        vid_hsync => vid_hsync,
         vid_vblank => open,
         vid_hblank => open,
         vid_field_id => open,
-        vid_data => open,
+        vid_data => vid_data,
         vtg_vsync => vtg_vsync,
         vtg_hsync => vtg_hsync,
         vtg_vblank => vtg_vblank,
@@ -188,10 +228,33 @@ v_axi4s_vid_out_0_i1 : v_axi4s_vid_out_0
   );
 
 
+    axisviout2vga_i1 : axisviout2vga
+    port map (  
+        vid_clock       => clock_video,
+        vid_active_video=> vid_active_video,
+        vid_vsync       => vid_vsync,
+        vid_hsync       => vid_hsync,
+        vid_data        => vid_data,
+        vga_red         => VGA_R,
+        vga_green       => VGA_G,
+        vga_blue        => VGA_B,
+        vga_hsync       => VGA_HS_O,
+        vga_vsync       => VGA_VS_O
+    );
+
+
     clk_wiz_0_i1 : clk_wiz_0
     port map ( 
-        clk_out1    => clock_video,
-        clk_in1     => clk100
+        clk_out1    => clk25M,
+        clk_in1     => CLK_I
+    );
+
+    resetgen_i1 : resetgen
+    port map (  
+        clock_in   => clk25M,
+        clock_out  => clock_video,
+        resetn_out => resetn
+
     );
 
 end rtl;

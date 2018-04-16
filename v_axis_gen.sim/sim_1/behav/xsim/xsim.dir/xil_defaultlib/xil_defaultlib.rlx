@@ -1,0 +1,14 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd,1523917147,vhdl,,,,axisviout2vga,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/resetgen.vhd,1523918907,vhdl,,,,resetgen,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/test_pattern_gen.vhd,1523903369,vhdl,,,,test_pattern_gen,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen.vhd,1523919062,vhdl,,,,v_axis_gen,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen_tb.vhd,1523919325,vhdl,,,,v_axis_gen_tb,,,,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1523903369,verilog,,D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/sim/v_axi4s_vid_out_0.v,,clk_wiz_0,,,../../../../v_axis_gen.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1523903369,verilog,,D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../v_axis_gen.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/sim/v_axi4s_vid_out_0.v,1523903440,verilog,,,,v_axi4s_vid_out_0,,,../../../../v_axis_gen.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_tc_0/sim/v_tc_0.vhd,1523903443,vhdl,,,,v_tc_0,,,,,,,,

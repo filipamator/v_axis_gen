@@ -1,0 +1,423 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 16 19:29:46 2018
+# Process ID: 17108
+# Current directory: D:/FPGA/git/v_axis_gen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4960 D:\FPGA\git\v_axis_gen\v_axis_gen.xpr
+# Log file: D:/FPGA/git/v_axis_gen/vivado.log
+# Journal file: D:/FPGA/git/v_axis_gen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA/git/v_axis_gen/v_axis_gen.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Filip/Xilinx/v_axis_gen' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:arty-a7-35:part0:1.0' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 814.668 ; gain = 101.734
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/v_axi4s_vid_out_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'v_axi4s_vid_out_0'...
+export_ip_user_files -of_objects [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/v_axi4s_vid_out_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/v_axi4s_vid_out_0.xci] -directory D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files/sim_scripts -ip_user_files_dir D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files -ipstatic_source_dir D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/modelsim} {questa=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/questa} {riviera=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/riviera} {activehdl=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_tc_0/v_tc_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'v_tc_0'...
+export_ip_user_files -of_objects [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_tc_0/v_tc_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_tc_0/v_tc_0.xci] -directory D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files/sim_scripts -ip_user_files_dir D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files -ipstatic_source_dir D:/FPGA/git/v_axis_gen/v_axis_gen.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/modelsim} {questa=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/questa} {riviera=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/riviera} {activehdl=D:/FPGA/git/v_axis_gen/v_axis_gen.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Simulation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'v_axis_gen_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj v_axis_gen_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_axi4s_vid_out_0/sim/v_axi4s_vid_out_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_axi4s_vid_out_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj v_axis_gen_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/v_tc_0/sim/v_tc_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity v_tc_0
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/test_pattern_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_pattern_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity v_axis_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity v_axis_gen_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e145537294b24386bf178e3a5879974c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L v_tc_v6_1_12 -L v_vid_in_axi4s_v4_0_7 -L v_axi4s_vid_out_v4_0_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot v_axis_gen_tb_behav xil_defaultlib.v_axis_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package v_tc_v6_1_12.video_ctrl_pkg
+Compiling package v_tc_v6_1_12.hwt_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.test_pattern_gen [test_pattern_gen_default]
+Compiling architecture rtl of entity v_tc_v6_1_12.video_ctrl [\video_ctrl(c_family="virtex5",c...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_generator [\tc_generator(c_max_pixels=1024,...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_top [\tc_top(c_max_pixels=1024,c_max_...]
+Compiling architecture imp of entity v_tc_v6_1_12.v_tc [\v_tc(c_has_axi4_lite=0,c_gen_vi...]
+Compiling architecture v_tc_0_arch of entity xil_defaultlib.v_tc_0 [v_tc_0_default]
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_cdc_singl...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_fifo_sync...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_coupler(C...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_sync_defa...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_formatter
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8(C_FAMILY=...
+Compiling module xil_defaultlib.v_axi4s_vid_out_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture rtl of entity xil_defaultlib.v_axis_gen [v_axis_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.v_axis_gen_tb
+Built simulation snapshot v_axis_gen_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim/xsim.dir/v_axis_gen_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 16 19:31:13 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 863.652 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "v_axis_gen_tb_behav -key {Behavioral:sim_1:Functional:v_axis_gen_tb} -tclbatch {v_axis_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source v_axis_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. v_axis_gen_tb.v_axis_gen_i1.v_axi4s_vid_out_0_i1.inst.COUPLER_INST.generate_sync_fifo.FIFO_INST.XPM_FIFO_SYNC_INST.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial270_24  File: /wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. v_axis_gen_tb.v_axis_gen_i1.v_axi4s_vid_out_0_i1.inst.COUPLER_INST.generate_sync_fifo.FIFO_INST.XPM_FIFO_SYNC_INST.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial270_24  File: /wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'v_axis_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:32 . Memory (MB): peak = 863.961 ; gain = 3.328
+add_wave {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/aclk}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/aclken}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/aresetn}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/s_axis_video_tdata}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/s_axis_video_tvalid}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/s_axis_video_tready}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/s_axis_video_tuser}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/s_axis_video_tlast}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/fid}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_io_out_ce}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_active_video}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_vsync}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_hsync}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_vblank}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_hblank}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_field_id}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vid_data}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_vsync}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_hsync}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_vblank}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_hblank}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_active_video}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_field_id}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/vtg_ce}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/locked}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/overflow}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/underflow}} {{/v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/status}} 
+run 70 ms
+run: Time (s): cpu = 00:00:34 ; elapsed = 00:07:45 . Memory (MB): peak = 877.887 ; gain = 0.000
+step
+Stopped at time : 70001002696 ps : File "/wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" Line 2287
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv: file does not exist.
+run 70 ms
+run: Time (s): cpu = 00:00:34 ; elapsed = 00:07:58 . Memory (MB): peak = 885.414 ; gain = 3.449
+run 70 ms
+run: Time (s): cpu = 00:00:28 ; elapsed = 00:07:54 . Memory (MB): peak = 885.414 ; gain = 0.000
+run 210 ms
+run: Time (s): cpu = 00:00:53 ; elapsed = 00:23:35 . Memory (MB): peak = 889.652 ; gain = 2.391
+WARNING: [filemgmt 20-1445] Cannot import file 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd' on top of itself. Importing a file from the imported source directory can cause this problem.
+add_files -norecurse -scan_for_includes D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd
+import_files -norecurse D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd
+CRITICAL WARNING: [filemgmt 20-1445] Cannot import file 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd' on top of itself. Importing a file from the imported source directory can cause this problem.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse D:/FPGA/git/v_axis_gen/arty.xdc
+import_files -fileset constrs_1 D:/FPGA/git/v_axis_gen/arty.xdc
+add_files -norecurse -scan_for_includes D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/resetgen.vhd
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'v_axi4s_vid_out_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'v_tc_0'...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+[Mon Apr 16 23:51:31 2018] Launched v_tc_0_synth_1, v_axi4s_vid_out_0_synth_1...
+Run output will be captured here:
+v_tc_0_synth_1: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/v_tc_0_synth_1/runme.log
+v_axi4s_vid_out_0_synth_1: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/v_axi4s_vid_out_0_synth_1/runme.log
+[Mon Apr 16 23:51:32 2018] Launched synth_1...
+Run output will be captured here: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Simulation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'v_axis_gen_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj v_axis_gen_tb_vlog.prj"
+"xvhdl --incr --relax -prj v_axis_gen_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/axisviout2vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity axisviout2vga
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/resetgen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity resetgen
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity v_axis_gen
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e145537294b24386bf178e3a5879974c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L v_tc_v6_1_12 -L v_vid_in_axi4s_v4_0_7 -L v_axi4s_vid_out_v4_0_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot v_axis_gen_tb_behav xil_defaultlib.v_axis_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <clk100> does not exist in entity <v_axis_gen>.  Please compare the definition of block <v_axis_gen> to its component declaration and its instantion to detect the mismatch. [D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen_tb.vhd:11]
+ERROR: [VRFC 10-718] formal port <resetn> does not exist in entity <v_axis_gen>.  Please compare the definition of block <v_axis_gen> to its component declaration and its instantion to detect the mismatch. [D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen_tb.vhd:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Simulation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'v_axis_gen_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj v_axis_gen_tb_vlog.prj"
+"xvhdl --incr --relax -prj v_axis_gen_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/imports/axis-test/v_axis_gen_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity v_axis_gen_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e145537294b24386bf178e3a5879974c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L v_tc_v6_1_12 -L v_vid_in_axi4s_v4_0_7 -L v_axi4s_vid_out_v4_0_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot v_axis_gen_tb_behav xil_defaultlib.v_axis_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package v_tc_v6_1_12.video_ctrl_pkg
+Compiling package v_tc_v6_1_12.hwt_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.test_pattern_gen [test_pattern_gen_default]
+Compiling architecture rtl of entity v_tc_v6_1_12.video_ctrl [\video_ctrl(c_family="virtex5",c...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_generator [\tc_generator(c_max_pixels=1024,...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_top [\tc_top(c_max_pixels=1024,c_max_...]
+Compiling architecture imp of entity v_tc_v6_1_12.v_tc [\v_tc(c_has_axi4_lite=0,c_gen_vi...]
+Compiling architecture v_tc_0_arch of entity xil_defaultlib.v_tc_0 [v_tc_0_default]
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_cdc_singl...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_fifo_sync...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_coupler(C...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_sync_defa...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_formatter
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8(C_FAMILY=...
+Compiling module xil_defaultlib.v_axi4s_vid_out_0
+Compiling architecture rtl of entity xil_defaultlib.axisviout2vga [axisviout2vga_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture rtl of entity xil_defaultlib.resetgen [resetgen_default]
+Compiling architecture rtl of entity xil_defaultlib.v_axis_gen [v_axis_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.v_axis_gen_tb
+Built simulation snapshot v_axis_gen_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 1103.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/git/v_axis_gen/v_axis_gen.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "v_axis_gen_tb_behav -key {Behavioral:sim_1:Functional:v_axis_gen_tb} -tclbatch {v_axis_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source v_axis_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. v_axis_gen_tb.v_axis_gen_i1.v_axi4s_vid_out_0_i1.inst.COUPLER_INST.generate_sync_fifo.FIFO_INST.XPM_FIFO_SYNC_INST.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial270_24  File: /wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. v_axis_gen_tb.v_axis_gen_i1.v_axi4s_vid_out_0_i1.inst.COUPLER_INST.generate_sync_fifo.FIFO_INST.XPM_FIFO_SYNC_INST.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /v_axis_gen_tb/v_axis_gen_i1/v_axi4s_vid_out_0_i1/inst/COUPLER_INST/generate_sync_fifo.FIFO_INST/XPM_FIFO_SYNC_INST/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial270_24  File: /wrk/2017.4/nightly/2017_12_15_2086221/prep/rdi/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'v_axis_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 1103.566 ; gain = 0.000
+add_wave {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/clock_in}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/clock_out}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/resetn_out}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/resetn}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/counter}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/clock_ok}} {{/v_axis_gen_tb/v_axis_gen_i1/resetgen_i1/clock_local}} 
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 100 us
+run 100 us
+run 100 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA/git/v_axis_gen/v_axis_gen.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+[Mon Apr 16 23:59:20 2018] Launched synth_1...
+Run output will be captured here: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Tue Apr 17 00:00:45 2018] Launched impl_1...
+Run output will be captured here: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP 'D:/FPGA/git/v_axis_gen/v_axis_gen.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Tue Apr 17 00:01:47 2018] Launched impl_1...
+Run output will be captured here: D:/FPGA/git/v_axis_gen/v_axis_gen.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A393EDA
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/FPGA/git/v_axis_gen/v_axis_gen.runs/impl_1/v_axis_gen.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).

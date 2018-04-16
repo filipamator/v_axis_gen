@@ -8,8 +8,12 @@ end v_axis_gen_tb;
 architecture Behavioral of v_axis_gen_tb is
 
 component v_axis_gen is
-    port (  clk100 : in  std_logic;
-            resetn : in std_logic    
+    port (  CLK_I : in  std_logic;
+            VGA_R   : out std_logic_vector(3 downto 0);
+            VGA_G   : out std_logic_vector(3 downto 0);
+            VGA_B   : out std_logic_vector(3 downto 0);
+            VGA_HS_O  : out std_logic;
+            VGA_VS_O  : out std_logic
     );
 end component v_axis_gen;
 
@@ -32,8 +36,7 @@ begin
     end process;
 
     v_axis_gen_i1 : v_axis_gen
-    port map (  clk100  => tb_clock,
-                resetn   => tb_resetn
+    port map (  CLK_I  => tb_clock
     );
 
 

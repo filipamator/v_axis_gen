@@ -1,0 +1,56 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto e145537294b24386bf178e3a5879974c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L v_tc_v6_1_12 -L v_vid_in_axi4s_v4_0_7 -L v_axi4s_vid_out_v4_0_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot v_axis_gen_tb_behav xil_defaultlib.v_axis_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package v_tc_v6_1_12.video_ctrl_pkg
+Compiling package v_tc_v6_1_12.hwt_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.test_pattern_gen [test_pattern_gen_default]
+Compiling architecture rtl of entity v_tc_v6_1_12.video_ctrl [\video_ctrl(c_family="virtex5",c...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_generator [\tc_generator(c_max_pixels=1024,...]
+Compiling architecture rtl of entity v_tc_v6_1_12.tc_top [\tc_top(c_max_pixels=1024,c_max_...]
+Compiling architecture imp of entity v_tc_v6_1_12.v_tc [\v_tc(c_has_axi4_lite=0,c_gen_vi...]
+Compiling architecture v_tc_0_arch of entity xil_defaultlib.v_tc_0 [v_tc_0_default]
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_cdc_singl...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_fifo_sync...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_coupler(C...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_sync_defa...
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8_formatter
+Compiling module v_axi4s_vid_out_v4_0_8.v_axi4s_vid_out_v4_0_8(C_FAMILY=...
+Compiling module xil_defaultlib.v_axi4s_vid_out_0
+Compiling architecture rtl of entity xil_defaultlib.axisviout2vga [axisviout2vga_default]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture rtl of entity xil_defaultlib.resetgen [resetgen_default]
+Compiling architecture rtl of entity xil_defaultlib.v_axis_gen [v_axis_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.v_axis_gen_tb
+Built simulation snapshot v_axis_gen_tb_behav

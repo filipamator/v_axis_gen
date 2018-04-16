@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1523919645">
+  <File Type="PWROPT-DCP" Name="v_axis_gen_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="v_axis_gen_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="v_axis_gen.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="v_axis_gen_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="v_axis_gen_reports.tcl"/>
+  <File Type="BG-DRC" Name="v_axis_gen.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="v_axis_gen_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="v_axis_gen_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="v_axis_gen.hwdef"/>
+  <File Type="OPT-DCP" Name="v_axis_gen_opt.dcp"/>
+  <File Type="OPT-DRC" Name="v_axis_gen_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="v_axis_gen_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="v_axis_gen_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="v_axis_gen_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="v_axis_gen_placed.dcp"/>
+  <File Type="PLACE-IO" Name="v_axis_gen_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="v_axis_gen_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="v_axis_gen_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="v_axis_gen_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="v_axis_gen_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="v_axis_gen_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="v_axis_gen_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="v_axis_gen_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="v_axis_gen_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="v_axis_gen_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="v_axis_gen_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="v_axis_gen_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="v_axis_gen.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="v_axis_gen_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="v_axis_gen_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="v_axis_gen_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="v_axis_gen_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="v_axis_gen_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="v_axis_gen_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="v_axis_gen.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="v_axis_gen_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="v_axis_gen.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="v_axis_gen_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="v_axis_gen.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="v_axis_gen_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="v_axis_gen.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="v_axis_gen_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="v_axis_gen_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="v_axis_gen_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="v_axis_gen_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="v_axis_gen_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="v_axis_gen_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="v_axis_gen_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="v_axis_gen_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="v_axis_gen.vdi"/>
+  <File Type="ROUTE-CLK" Name="v_axis_gen_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="v_axis_gen_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="v_axis_gen_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="v_axis_gen_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="v_axis_gen_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="v_axis_gen_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="v_axis_gen.nky"/>
+  <File Type="BITSTR-BMM" Name="v_axis_gen_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="v_axis_gen.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="v_axis_gen.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="v_axis_gen.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_test/video_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci"/>
+        <Attr Name="ImportTime" Val="1523880532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis-test/axisviout2vga.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis-test/resetgen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis-test/test_pattern_gen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/user/Dropbox/axis-test/test_pattern_gen.vhd"/>
+        <Attr Name="ImportTime" Val="1523824066"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis-test/v_axis_gen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/user/Dropbox/axis-test/v_axis_gen.vhd"/>
+        <Attr Name="ImportTime" Val="1523880778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis-test/v_axis_gen_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Users/user/Dropbox/axis-test/v_axis_gen_tb.vhd"/>
+        <Attr Name="ImportTime" Val="1523880948"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="v_axis_gen"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/v_axis_gen/arty.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/arty.xdc"/>
+        <Attr Name="ImportTime" Val="1517532279"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="v_tc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="v_axi4s_vid_out_0"/>
+</GenRun>
